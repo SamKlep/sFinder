@@ -1,0 +1,28 @@
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">
+        News
+    </h1>
+    <p class="lead">The Latest Cannabis news from the <a href="https://nytimes.com"> New York Times</a>.</p>
+</div>
+
+{{#each news.response.docs}}
+<div class="row">
+
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header text-white bg-dark">{{this.headline.main}}</h5>
+            <div class="card-body">
+
+
+                <p>{{this.snippet}}</p>
+                <p>--{{this.source}}</p>
+                <a class="btn btn-warning" href="{{this.web_url}}" target="_blank">Learn More</a>
+
+            </div>
+        </div>
+        <br />
+    </div>
+
+</div>
+{{/each}}

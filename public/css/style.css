@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(177, 235, 165);
+}
+
+.navbar ul li a{
+    font-size: 1rem;
+}
+
+.navbar .logo:hover {
+    color: #ffc43a;
+}
+
+.logo:hover a {
+    color: #ffc43a;
+    text-decoration: none;
+}
+.logo a {
+    color: black;
+    text-decoration: none;
+}
